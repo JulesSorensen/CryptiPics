@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "strict": true,
+    "noImplicitReturns": true,
+    "outDir": "./dist/",
+    "noEmit": true,
+    "allowJs": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "resolveJsonModule": true,
+    "paths": {
+      "@src/*": ["./src/*"],
+      "@stores/*": ["./src/stores/*"],
+      "@components/*": ["./src/components/*"],
+      "@screens/*": ["./src/screens/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@services/*": ["./src/services/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@routes": ["./src/routes"],
+      "@constants/*": ["./src/constants/*"],
+      "@containers/*": ["./src/containers/*"],
+      "@img/*": ["./src/img/*"],
+      "types/*": ["./src/types/*"]
+    }
+  },
+  "include": ["src"]
+}

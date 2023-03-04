@@ -1,0 +1,36 @@
+.date-picker .react-datepicker__header--custom {
+  @apply border-b-0 overflow-hidden bg-white dark:bg-slate-600;
+}
+
+.date-picker .react-datepicker__month-container {
+  width: 240px;
+}
+
+.date-picker .react-datepicker__month.react-datepicker__monthPicker {
+  padding-bottom: 30px;
+}
+
+.date-picker .react-datepicker__month-text--keyboard-selected,
+.date-picker .react-datepicker__day--selected,
+.date-picker .react-datepicker__day--keyboard-selected,
+.date-picker .react-datepicker__day--keyboard-selected:hover,
+.date-picker .react-datepicker__month-text.react-datepicker__month--selected:hover {
+  @apply bg-secondary;
+}
+
+.date-picker .react-datepicker {
+  @apply border-gray-300 shadow-md bg-white dark:bg-slate-600 dark:border-gray-700;
+}
+
+.date-picker .react-datepicker__day--outside-month {
+  @apply text-slate-500;
+}
+
+.date-picker .react-datepicker__triangle {
+  left: -15px !important;
+}
+
+.date-picker .react-datepicker__triangle::after,
+.date-picker .react-datepicker__triangle::before {
+  @apply dark:border-t-slate-600;
+}

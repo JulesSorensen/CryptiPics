@@ -1,0 +1,9 @@
+{
+  "sideMenu": {
+      "home": "Hjem",
+      "crypt": "Bilde krypten",
+      "steganography": "Steganografi",
+      "privatetext": "Privat tekst",
+      "settings": "Innstillinger"
+  }
+}
