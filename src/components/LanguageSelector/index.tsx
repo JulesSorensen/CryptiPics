@@ -7,13 +7,14 @@ const LanguageSelector = () => {
     const changeLanguage = (lang: string) => {
         localStorage.setItem('l', lang);
         setLanguage(lang);
+        window.location.reload();
     };
 
     return (
-        <div className='flex items-center'>
-            <img className={`h-[30px] my-auto ${language == "en" ? "bg-gray-800 rounded" : ""}`} src="./img/lang/en.png" alt="EN/US" onClick={() => { changeLanguage("en") }} />
-            <img className={`h-[30px] my-auto ${language == "fr" ? "bg-gray-800 rounded" : ""}`} src="./img/lang/fr.png" alt="FR" onClick={() => { changeLanguage("fr") }} />
-            <img className={`h-[30px] my-auto ${language == "no" ? "bg-gray-800 rounded" : ""}`} src="./img/lang/no.png" alt="NO" onClick={() => { changeLanguage("no") }} />
+        <div className='flex items-center mr-5'>
+            <img className={`h-[30px] my-auto transition-all duration-300 rounded ${language == "en" ? "bg-gray-800 hover:bg-gray-800 cursor-not-allowed" : "cursor-pointer hover:bg-gray-600"}`} src="./img/lang/en.png" alt="EN/US" onClick={() => { changeLanguage("en") }} />
+            <img className={`h-[30px] my-auto transition-all duration-300 rounded ${language == "fr" ? "bg-gray-800 hover:bg-gray-800 cursor-not-allowed" : "cursor-pointer hover:bg-gray-600"}`} src="./img/lang/fr.png" alt="FR" onClick={() => { changeLanguage("fr") }} />
+            <img className={`h-[30px] my-auto transition-all duration-300 rounded ${language == "no" ? "bg-gray-800 hover:bg-gray-800 cursor-not-allowed" : "cursor-pointer hover:bg-gray-600"}`} src="./img/lang/no.png" alt="NO" onClick={() => { changeLanguage("no") }} />
         </div>
     );
 };
