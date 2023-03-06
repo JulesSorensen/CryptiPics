@@ -43,7 +43,7 @@ const SideBar: React.FC<SideBarProps> = ({ isOpen, toggleSideBar }) => {
                   } flex items-center px-6 py-2 mt-4 duration-200 border-gray-100`}
               >
                 <span className='flex flex-row align-middle mr-2'>{item.icon && item.icon()}</span>
-                {getTranslation('sideMenu')[item.name]}
+                {getTranslation(`sideMenu.${item.name}`)}
               </Link>
             )
           })}

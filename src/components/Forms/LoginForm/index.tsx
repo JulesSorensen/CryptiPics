@@ -11,9 +11,9 @@ export interface LoginFields {
   password: string
 }
 
-interface LoginFormProps extends FormikProps<LoginFields> {}
+interface LoginFormProps extends FormikProps<LoginFields> { }
 
-const LoginForm: React.FC<LoginFormProps> = ({}) => {
+const LoginForm: React.FC<LoginFormProps> = ({ }) => {
   return (
     <Form className="w-full">
       <Field name="email" placeholder="Adresse E-mail" component={Input} icon={<MailIcon className="w-5 h-5" />} />
@@ -25,17 +25,23 @@ const LoginForm: React.FC<LoginFormProps> = ({}) => {
         icon={<LockClosedIcon className="w-5 h-5" />}
       />
 
-      <Link to={routes.LOST_PASSWORD}>
-        <div className="flex justify-center mt-2 underline decoration-primary underline-offset-4 hover:opacity-50 dark:text-white">
-          Mot de passe oublié
-        </div>
-      </Link>
-
       <div className="flex justify-center mt-10">
         <Button type="submit" className="p-4 mx-5 w-full rounded-2xl">
           Connexion
         </Button>
       </div>
+
+      <Link to={routes.LOST_PASSWORD}>
+        <div className="flex justify-center mt-2 underline decoration-primary underline-offset-4 hover:opacity-50 dark:text-white">
+          Mot de passe oublié ?
+        </div>
+      </Link>
+
+      <Link to={routes.LOST_PASSWORD}>
+        <div className="flex justify-center mt-2 underline decoration-primary underline-offset-4 hover:opacity-50 dark:text-white">
+          Je n'ai pas de compte
+        </div>
+      </Link>
     </Form>
   )
 }

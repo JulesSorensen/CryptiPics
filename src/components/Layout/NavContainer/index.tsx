@@ -24,7 +24,7 @@ const NavContainer: React.FC<NavContainerProps> = ({ children }) => {
           <NavBar toggleSideBar={toggleSideBar} />
 
           <main className="flex-1 overflow-x-hidden overflow-y-auto bg-gray-200 dark:bg-slate-800 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-transparent dark:scrollbar-thumb-slate-500 dark:scrollbar-track-slate-800">
-            <div className="container mx-auto px-6 py-8">{children}</div>
+            <div className="container h-full mx-auto px-6 py-8">{children}</div>
           </main>
         </div>
       </div>

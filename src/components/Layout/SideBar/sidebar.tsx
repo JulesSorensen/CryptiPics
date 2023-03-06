@@ -1,4 +1,4 @@
-import { faImage, faHouse, faGear, faEnvelopeOpenText, faTextSlash } from '@fortawesome/free-solid-svg-icons'
+import { faImage, faHouse, faGear, faEnvelopeOpenText, faTextSlash, faPerson } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import routes from '@routes'
 import React from 'react'
@@ -30,6 +30,11 @@ const sidebar: SideBarItem[] = [
   //   path: '/texts',
   //   icon: () => <FontAwesomeIcon className="w-5 h-5" icon={faTextSlash} />
   // },
+  {
+    name: 'account',
+    path: '/account',
+    icon: () => <FontAwesomeIcon className="w-5 h-5" icon={faPerson} />
+  },
   {
     name: 'settings',
     path: '/settings',

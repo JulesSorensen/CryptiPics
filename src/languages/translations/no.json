@@ -4,6 +4,7 @@
       "crypt": "Bilde krypten",
       "steganography": "Steganografi",
       "privatetext": "Privat tekst",
-      "settings": "Innstillinger"
+        "account": "Min konto",
+        "settings": "Innstillinger"
   }
 }

@@ -1,15 +1,9 @@
-import fr from './traductions/fr.json';
-import en from './traductions/en.json';
-import no from './traductions/no.json';
+import fr from './translations/fr.json';
+import en from './translations/en.json';
+import no from './translations/no.json';
 
 export type TLanguages = 'en' | 'fr' | 'no';
 export const supportedLanguages: TLanguages[] = ['en', 'fr', 'no'];
-
-const languages: { code: TLanguages, name: string }[] = [
-    { code: 'en', name: 'English' },
-    { code: 'fr', name: 'Français' },
-    { code: 'no', name: 'Norwegian' }
-]
 
 const translations: { [key in TLanguages]: any } = {
     'en': en,
@@ -22,18 +16,18 @@ export const getTranslation = (text: string): any => {
         const browserLang = navigator.language.split('-')[0] as TLanguages;
         if (supportedLanguages.includes(browserLang)) {
             localStorage.setItem('l', browserLang);
-            return translations[browserLang][text];
+            return text.split('.').reduce((o, i) => o?.[i], translations[browserLang]) ?? text.split('.').reduce((o, i) => o?.[i], translations["en"]) ?? "* Missing translation *";
         } else {
             localStorage.setItem('l', 'en');
-            return translations['en'][text];
+            return text.split('.').reduce((o, i) => o?.[i], translations["en"]) ?? "* Missing translation *";
         }
     } else {
         const lang = localStorage.getItem('l') as TLanguages;
-        if (supportedLanguages.includes(lang)) {
-            return translations[lang][text];
+        if (supportedLanguages.includes(lang)) { 
+            return text.split('.').reduce((o, i) => o?.[i], translations[lang]) ?? text.split('.').reduce((o, i) => o?.[i], translations["en"]) ?? "* Missing translation *";
         } else {
             localStorage.setItem('l', 'en');
-            return translations['en'][text];
+            return text.split('.').reduce((o, i) => o?.[i], translations["en"]) ?? "* Missing translation *";
         }
     }
 }
