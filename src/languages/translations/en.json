@@ -1,0 +1,18 @@
+{
+    "sideMenu": {
+        "home": "Home",
+        "crypt": "Picture crypt",
+        "steganography": "Steganography",
+        "privatetext": "Private text",
+        "account": "My account",
+        "settings": "Settings"
+    },
+    "homePage": {
+        "crypttitle": "CRYPT or UNCRYPT pictures",
+        "crypttext": "This is a simple tool to crypt or uncrypt a picture with different methods.",
+        "steganographytitle": "Use STEGANOGRAPHY",
+        "steganographytext": "This is a simple tool to hide a message in a picture.",
+        "commingsoontitle": "Coming soon 🕣",
+        "commingsoontext": "Other functionnalities will continue to arrive."
+    }
+}

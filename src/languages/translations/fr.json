@@ -1,9 +1,10 @@
 {
     "sideMenu": {
-        "home": "Acceuil",
+        "home": "Accueil",
         "crypt": "Cryptage de photo",
         "steganography": "Stéganographie",
         "privatetext": "Texte privé",
+        "account": "Mon compte",
         "settings": "Paramètres"
     }
 }

@@ -3,8 +3,29 @@ import React from 'react'
 
 const Home: React.FC = () => {
   return (
-    <div>
-      <h3 className="page-title">{getTranslation("sideMenu").home}</h3>
+    <div className='h-full'>
+      <h3 className="page-title">{getTranslation("sideMenu.home")}</h3>
+      <div className='flex items-center h-full'>
+        <div className='flex flex-col justify-center space-y-6'>
+          <div className='flex flex-row justify-between'>
+            <div className='card flex flex-col justify-between w-1/2 mr-6 hover:bg-blue-800'>
+              <h1 className="text-xl font-bold section-title">{getTranslation("homePage.crypttitle")}</h1>
+              <img src="./img/examples/decrypted.png" alt="" className='max-h-64' />
+              <p className="basic-text">{getTranslation("homePage.crypttext")}</p>
+            </div>
+            <div className='card flex flex-col justify-between w-1/2 hover:bg-blue-800'>
+              <h1 className="text-xl font-bold section-title">{getTranslation("homePage.steganographytitle")}</h1>
+              <img src="./img/examples/steganography.png" alt="" className='max-h-64' />
+              <p className="basic-text">{getTranslation("homePage.steganographytext")}</p>
+            </div>
+          </div>
+          <div className='card flex flex-col justify-between w-96 mx-auto hover:bg-blue-800'>
+            <h1 className="text-xl font-bold section-title">{getTranslation("homePage.commingsoontitle")}</h1>
+            <p className="basic-text">{getTranslation("homePage.commingsoontext")}</p>
+          </div>
+        </div>
+      </div>
+
     </div>
   )
 }
