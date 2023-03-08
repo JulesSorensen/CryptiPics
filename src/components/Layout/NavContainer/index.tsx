@@ -12,6 +12,8 @@ const NavContainer: React.FC<NavContainerProps> = ({ children }) => {
   const [isSideBarOpen, setIsSideBarOpen] = useState(false)
 
   const toggleSideBar = () => {
+    console.log('toggleSideBar');
+    
     setIsSideBarOpen(!isSideBarOpen)
   }
 

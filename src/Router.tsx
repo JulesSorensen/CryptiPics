@@ -9,6 +9,7 @@ import Home from '@screens/Home'
 import MyAccount from '@screens/MyAccount'
 import LostPassword from '@screens/LostPassword'
 import UpdateLostPassword from '@screens/UpdateLostPassword'
+import Crypt from './screens/Crypt'
 
 const Router: React.FC = () => {
   return (
@@ -16,6 +17,7 @@ const Router: React.FC = () => {
       <Routes>
         <Route path="/" element={<NavContainer children={<Home />} />} />
         <Route path={routes.HOME} element={<NavContainer children={<Home />} />} />
+        <Route path={routes.CRYPT} element={<NavContainer children={<Crypt />} />} />
         <Route path={routes.MY_ACCOUNT} element={<NavContainer children={<MyAccount />} />} />
 
         <Route path="/test" element={<NavContainer children={<TestScreen />} />} />
