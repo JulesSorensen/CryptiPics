@@ -16,6 +16,17 @@ module.exports = {
         secondary: '#2378ce',
         'secondary-dark': '#1e69b5',
         'secondary-light': '#1e69b5'
+      },
+      keyframes: {
+        wave: {
+          '0%, 100%': { transform: 'rotate(0deg)' },
+          '20%': { transform: 'rotate(-5deg)' },
+          '50%': { transform: 'rotate(0deg)' },
+          '70%': { transform: 'rotate(5deg)' },
+        },
+      },
+      animation: {
+        'waving-hand': 'wave 0.3s ease-in-out',
       }
     }
   }
