@@ -21,7 +21,7 @@ const SideBar: React.FC<SideBarProps> = ({ isOpen, toggleSideBar }) => {
       <div
         className={`${isOpen ? '-translate-x-0 ease-out ml-1' : '-translate-x-full ease-in'
           } my-3 fixed inset-y-0 left-0 z-30 w-64 overflow-y-auto transition duration-300
-        transform bg-gray-900 rounded-3xl shadow-xl`}
+        transform bg-gray-200 dark:bg-gray-900 rounded-3xl shadow-xl`}
       >
         <div className="flex items-center justify-center mt-8">
           <div className="flex items-center">
@@ -39,8 +39,8 @@ const SideBar: React.FC<SideBarProps> = ({ isOpen, toggleSideBar }) => {
                 to={item.path}
                 onClick={toggleSideBar}
                 className={`${isActive
-                    ? 'flex flex-row align-middle router-link-active router-link-exact-active bg-gray-600 bg-opacity-25 text-gray-100 border-l-4'
-                    : 'border-gray-900 text-gray-500 hover:bg-gray-600 hover:bg-opacity-25 hover:text-gray-100'
+                    ? 'flex flex-row align-middle router-link-active router-link-exact-active bg-gray-600 bg-opacity-25 text-gray-100 border-gray-800 dark:border-white border-l-4'
+                    : 'border-gray-900 text-gray-800 dark:text-gray-500 hover:bg-gray-600 hover:bg-opacity-25 hover:text-gray-500 hover:dark:text-gray-100'
                   } flex items-center px-6 py-2 mt-4 duration-200 border-gray-100`}
               >
                 <span className='flex flex-row align-middle mr-2'>{item.icon && item.icon()}</span>
