@@ -4,3 +4,5 @@ dist/
 build/
 .env
 !hologram/docs/dist
+package-lock.json
+yarn.lock

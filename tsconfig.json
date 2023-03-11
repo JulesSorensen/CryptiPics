@@ -1,33 +1,21 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "jsx": "preserve",
-    "moduleResolution": "node",
-    "strict": true,
-    "noImplicitReturns": true,
-    "outDir": "./dist/",
-    "noEmit": true,
-    "allowJs": true,
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": false,
     "skipLibCheck": true,
-    "isolatedModules": true,
-    "esModuleInterop": true,
-    "baseUrl": "./",
+    "esModuleInterop": false,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
     "resolveJsonModule": true,
-    "paths": {
-      "@src/*": ["./src/*"],
-      "@stores/*": ["./src/stores/*"],
-      "@components/*": ["./src/components/*"],
-      "@screens/*": ["./src/screens/*"],
-      "@utils/*": ["./src/utils/*"],
-      "@services/*": ["./src/services/*"],
-      "@hooks/*": ["./src/hooks/*"],
-      "@routes": ["./src/routes"],
-      "@constants/*": ["./src/constants/*"],
-      "@containers/*": ["./src/containers/*"],
-      "@img/*": ["./src/img/*"],
-      "types/*": ["./src/types/*"]
-    }
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx"
   },
-  "include": ["src"]
+  "include": ["src"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
