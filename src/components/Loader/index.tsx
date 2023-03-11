@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactLoaderSpinner from 'react-loader-spinner'
+import * as ReactLoaderSpinner from 'react-loader-spinner'
 
 interface LoaderProps {
   show?: boolean

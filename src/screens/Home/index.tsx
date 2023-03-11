@@ -5,7 +5,8 @@ const Home: React.FC = () => {
   return (
     <div className='h-full'>
       <h3 className="page-title">{getTranslation("sideMenu.home")}</h3>
-      <div className='flex items-center h-full'>
+      <p className='basic-text mt-10'>Bievenue sur CryptiPics</p>
+      <div className='flex items-center mt-16'>
         <div className='flex flex-col justify-center space-y-6'>
           <div className='flex flex-row justify-between'>
             <div className='card flex flex-col justify-between w-1/2 mr-6 transition-all duration-200 hover:animate-waving-hand hover:bg-blue-200 hover:dark:bg-blue-900/50 cursor-pointer hover:shadow-inner'>

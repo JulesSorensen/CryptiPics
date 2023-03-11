@@ -17,9 +17,9 @@ const MyAccount: React.FC = () => {
       // return fetchMyAccountData()
 
       return {
-        firstname: 'John',
-        lastname: 'Doe',
-        email: 'john.doe@cryptipics.io',
+        firstname: 'Jules',
+        lastname: 'Lad',
+        email: 'juleslad@cryptipics.io',
         phone: '0600000000'
       }
     })

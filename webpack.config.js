@@ -131,8 +131,8 @@ const config = {
       filename: isProd ? '[name].css' : '[name].[hash].css',
       chunkFilename: isProd ? '[id].css' : '[id].[hash].css'
     }),
-    new CopyWebpackPlugin([{ from: './src/assets/img', to: 'img' }], { copyUnmodified: false }),
-    new CopyWebpackPlugin([{ from: './src/assets/fonts', to: 'fonts' }], { copyUnmodified: false })
+    new CopyWebpackPlugin({ patterns: [{ from: './src/assets/img', to: 'img' }] }),
+    new CopyWebpackPlugin({ patterns: [{ from: './src/assets/fonts', to: 'fonts' }] })
   ]
 }
 if (isProd) {
@@ -146,10 +146,12 @@ if (isProd) {
     open: true,
     hot: true,
     compress: true,
-    stats: 'errors-only',
-    overlay: true,
+    // stats: 'errors-only',
+    // overlay: true,
     historyApiFallback: true,
-    publicPath: '/'
+    devMiddleware: {
+      publicPath: '/'
+    }
   }
 }
 

@@ -27,8 +27,8 @@ const Login: React.FC = () => {
         access_token: 'mock',
         user: {
           id: 1,
-          firstname: 'John',
-          lastname: 'Doe',
+          firstname: 'Jules',
+          lastname: 'Lad',
           email: values.email,
           roles: [Roles.ADMIN],
           enabled: true
