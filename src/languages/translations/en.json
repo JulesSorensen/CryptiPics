@@ -1,9 +1,9 @@
 {
     "sideMenu": {
         "home": "Home",
-        "crypt": "Picture crypt",
+        "crypt": "Image Encryption",
         "steganography": "Steganography",
-        "privatetext": "Private text",
+        "privatetext": "Secure pastebin",
         "account": "My account",
         "settings": "Settings"
     },

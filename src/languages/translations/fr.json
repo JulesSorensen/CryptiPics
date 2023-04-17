@@ -3,8 +3,16 @@
         "home": "Accueil",
         "crypt": "Cryptage de photo",
         "steganography": "Stéganographie",
-        "privatetext": "Texte privé",
+        "privatetext": "Pastebin protégé",
         "account": "Mon compte",
         "settings": "Paramètres"
+    },
+    "homePage": {
+        "crypttitle": "CRYPTER ou DECRYPTER vos images",
+        "crypttext": "Cet outil vous permet de chiffrer et déchiffrer vos images via différentes méthodes de protections.",
+        "steganographytitle": "Utiliser la STEGANOGRAPHIE",
+        "steganographytext": "Cet outil vous permet de cacher un texte au sein d'une image.",
+        "commingsoontitle": "Ca arrive bientôt 🕣",
+        "commingsoontext": "D'autres fonctionnalités vont arriver prochainement."
     }
 }
