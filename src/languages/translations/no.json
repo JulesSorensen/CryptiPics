@@ -1,10 +1,10 @@
 {
-  "sideMenu": {
-      "home": "Hjem",
-      "crypt": "Bilde krypten",
-      "steganography": "Steganografi",
-      "privatetext": "Privat tekst",
+    "sideMenu": {
+        "home": "Hjem",
+        "crypt": "Bilde krypten",
+        "steganography": "Steganografi",
+        "privatetext": "Privat tekst",
         "account": "Min konto",
         "settings": "Innstillinger"
-  }
+    }
 }
