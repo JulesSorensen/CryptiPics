@@ -12,7 +12,7 @@
         "crypttext": "Cet outil vous permet de chiffrer et déchiffrer vos images via différentes méthodes de protections.",
         "steganographytitle": "Utiliser la STEGANOGRAPHIE",
         "steganographytext": "Cet outil vous permet de cacher un texte au sein d'une image.",
-        "commingsoontitle": "Ca arrive bientôt 🕣",
-        "commingsoontext": "D'autres fonctionnalités vont arriver prochainement."
+        "pastebintitle": "PASTEBIN SECURISE",
+        "pastebintext": "Cet outil vous permet de partager un texte de manière sécurisée."
     }
 }

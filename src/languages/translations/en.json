@@ -12,7 +12,7 @@
         "crypttext": "This is a simple tool to crypt or uncrypt a picture with different methods.",
         "steganographytitle": "Use STEGANOGRAPHY",
         "steganographytext": "This is a simple tool to hide a message in a picture.",
-        "commingsoontitle": "Coming soon 🕣",
-        "commingsoontext": "Other functionnalities will continue to arrive."
+        "pastebintitle": "SECURE PASTEBIN",
+        "pastebintext": "This is a simple tool to share a text with a password."
     }
 }

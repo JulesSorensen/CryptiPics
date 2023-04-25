@@ -1,28 +1,31 @@
 import { getTranslation } from '@src/languages'
 import React from 'react'
+import { Link } from 'react-router-dom'
+import routes from '@routes'
 
 const Home: React.FC = () => {
   return (
-    <div className='h-full'>
+    <div className='flex flex-col h-full'>
       <h3 className="page-title">{getTranslation("sideMenu.home")}</h3>
-      <div className='flex items-center h-full'>
-        <div className='flex flex-col justify-center space-y-6'>
-          <div className='flex flex-row justify-between'>
-            <div className='card flex flex-col justify-between w-1/2 mr-6 transition-all duration-200 hover:animate-waving-hand hover:bg-blue-200 hover:dark:bg-blue-900/50 cursor-pointer hover:shadow-inner'>
+      <div className='flex justify-center items-center h-full m-y-auto'>
+        <div className='flex flex-col max-w-5xl w-full justify-center space-y-6'>
+          <div className='flex flex-row justify-around'>
+            <Link to={routes.CRYPT} className='home-card'>
               <h1 className="text-xl font-bold section-title">{getTranslation("homePage.crypttitle")}</h1>
-              <img src="./img/examples/decrypted.png" alt="" className='max-h-64' />
+              <img src="./img/examples/decrypted.png" alt="Encrypted and decrypted picture" className='mt-3 mb-1 max-h-32 mx-auto' />
               <p className="basic-text">{getTranslation("homePage.crypttext")}</p>
-            </div>
-            <div className='card flex flex-col justify-between w-1/2 transition-all duration-200 hover:animate-waving-hand hover:bg-blue-200 hover:dark:bg-blue-900/50 cursor-pointer hover:shadow-inner'>
+            </Link>
+            <Link to={routes.STEGANOGRAPHY} className='home-card'>
               <h1 className="text-xl font-bold section-title">{getTranslation("homePage.steganographytitle")}</h1>
-              <img src="./img/examples/steganography.png" alt="" className='max-h-64' />
+              <img src="./img/examples/steganography.png" alt="Steganography text exemple" className='mt-3 mb-1 max-h-32 mx-auto' />
               <p className="basic-text">{getTranslation("homePage.steganographytext")}</p>
-            </div>
+            </Link>
           </div>
-          <div className='card flex flex-col justify-between w-96 mx-auto transition-all duration-200 hover:animate-waving-hand hover:bg-blue-200 hover:dark:bg-blue-900/50 cursor-pointer hover:shadow-inner'>
-            <h1 className="text-xl font-bold section-title">{getTranslation("homePage.commingsoontitle")}</h1>
-            <p className="basic-text">{getTranslation("homePage.commingsoontext")}</p>
-          </div>
+          <Link to={routes.PASTEBIN} className='home-card mx-auto'>
+              <h1 className="text-xl font-bold section-title">{getTranslation("homePage.pastebintitle")}</h1>
+              <img src="./img/examples/clipboard.png" alt="Clipboard icon" className='mt-3 mb-1 max-h-32 mx-auto' />
+              <p className="basic-text">{getTranslation("homePage.pastebintext")}</p>
+            </Link>
         </div>
       </div>
 

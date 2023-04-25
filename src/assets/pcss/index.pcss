@@ -16,8 +16,9 @@ html {
   @apply text-slate-600 dark:text-slate-100;
 }
 
-.card {
-  @apply px-5 py-6 bg-white dark:bg-slate-700 rounded-md shadow-sm;
+.home-card {
+  @apply max-w-[30rem] px-5 py-6 bg-white dark:bg-slate-700 rounded-md shadow-sm select-none cursor-pointer;
+  @apply flex flex-col justify-between w-1/2 transition-all duration-200 hover:animate-waving-hand hover:bg-blue-200 hover:dark:bg-blue-900/50 hover:shadow-inner;
 }
 
 .input {

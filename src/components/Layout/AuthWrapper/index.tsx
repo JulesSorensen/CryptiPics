@@ -25,8 +25,6 @@ const AuthWrapper: React.FC<AuthWrapperProps> = ({ children }) => {
       if (isTokenExpired) {
         dispatch(logout())
       }
-
-      navigate(routes.LOGIN)
     }
   }, [currentUser])
 

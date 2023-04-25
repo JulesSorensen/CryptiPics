@@ -6,5 +6,13 @@
         "privatetext": "Privat tekst",
         "account": "Min konto",
         "settings": "Innstillinger"
+    },
+    "homePage": {
+        "crypttitle": "KRYPTERE eller DEKRYPTERE bildene dine",
+        "crypttext": "Dette verktøyet lar deg kryptere og dekryptere bildene dine via forskjellige beskyttelsesmetoder.",
+        "steganographytitle": "Bruk av STEGANOGRAFI",
+        "steganographytext": "Dette verktøyet lar deg skjule tekst i et bilde.",
+        "pastebintitle": "SIKKER PASTEBIN",
+        "pastebintext": "Dette verktøyet lar deg dele en tekst på en sikker måte."
     }
 }

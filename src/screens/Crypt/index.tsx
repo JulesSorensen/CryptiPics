@@ -6,6 +6,7 @@ const Crypt: React.FC = () => {
     <div className='h-full'>
       <h3 className="page-title">{getTranslation("cryptPage.title")}</h3>
       <div className='flex items-center h-full'>
+
       </div>
     </div>
   )

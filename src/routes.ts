@@ -7,7 +7,7 @@ enum ERoutes {
   "HOME" = '/home',
   "CRYPT" = '/crypt',
   "STEGANOGRAPHY" = '/steganography',
-  "PRIVATE_TEXT" = '/private-text',
+  "PASTEBIN" = '/pastebin',
   "SETTINGS" = '/settings',
   "MY_ACCOUNT" = '/my-account'
 }
