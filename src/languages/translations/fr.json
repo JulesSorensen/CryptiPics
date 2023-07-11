@@ -7,6 +7,14 @@
         "account": "Mon compte",
         "settings": "Paramètres"
     },
+    "loginPage": {
+        "usernameInputPlaceholder": "Nom d'utilisateur ou email",
+        "passwordInputPlaceholder": "Mot de passe",
+        "loginButton": "Se connecter",
+        "forgotPasswordRedirect": "Mot de passe oublié ?",
+        "registerRedirect": "Je n'ai pas de compte",
+        "loginError": "Votre nom d'utilisateur ou mot de passe est incorrect"
+    },
     "homePage": {
         "crypttitle": "CRYPTER ou DECRYPTER vos images",
         "crypttext": "Cet outil vous permet de chiffrer et déchiffrer vos images via différentes méthodes de protections.",

@@ -7,6 +7,14 @@
         "account": "My account",
         "settings": "Settings"
     },
+    "loginPage": {
+        "usernameInputPlaceholder": "Username or email",
+        "passwordInputPlaceholder": "Password",
+        "loginButton": "Login",
+        "forgotPasswordRedirect": "Forgot password?",
+        "registerRedirect": "I don't have an account",
+        "loginError": "Your username or password is incorrect"
+    },
     "homePage": {
         "crypttitle": "CRYPT or UNCRYPT pictures",
         "crypttext": "This is a simple tool to crypt or uncrypt a picture with different methods.",

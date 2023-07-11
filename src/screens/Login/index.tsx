@@ -27,8 +27,7 @@ const Login: React.FC = () => {
         access_token: 'mock',
         user: {
           id: 1,
-          firstname: 'John',
-          lastname: 'Doe',
+          username: values.username,
           email: values.email,
           roles: [Roles.ADMIN],
           enabled: true
@@ -37,7 +36,7 @@ const Login: React.FC = () => {
 
       dispatch(setLogin(authResult))
 
-      toast.success(`Vous êtes désormais connecté en tant que ${authResult.user.firstname} ${authResult.user.lastname}`)
+      toast.success(`Vous êtes désormais connecté ${authResult.user.username} !`)
     } catch (error) {
       helpers.resetForm()
       toast.error('Identifiant ou mot de passe incorrect')
@@ -60,7 +59,7 @@ const Login: React.FC = () => {
       <div className="flex flex-col pt-14 items-center">
         <img src={'img/logo/cryptipics.png'} className="mt-28 mb-10" alt="logo cryptipics" width="350" />
 
-        <Formik initialValues={{ email: '', password: '' }} onSubmit={onSubmit}>
+        <Formik initialValues={{ username: '', password: '' }} onSubmit={onSubmit}>
           {(formikProps: FormikProps<LoginFields>) => <LoginForm {...formikProps} />}
         </Formik>
       </div>

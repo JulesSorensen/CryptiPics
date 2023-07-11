@@ -7,6 +7,14 @@
         "account": "Min konto",
         "settings": "Innstillinger"
     },
+    "loginPage": {
+        "usernameInputPlaceholder": "Brukernavn eller e-post",
+        "passwordInputPlaceholder": "Passord",
+        "loginButton": "Logg inn",
+        "forgotPasswordRedirect": "Har du glemt passordet ditt?",
+        "registerRedirect": "Jeg har ingen konto",
+        "loginError": "Brukernavnet eller passordet ditt er feil"
+    },
     "homePage": {
         "crypttitle": "KRYPTERE eller DEKRYPTERE bildene dine",
         "crypttext": "Dette verktøyet lar deg kryptere og dekryptere bildene dine via forskjellige beskyttelsesmetoder.",
