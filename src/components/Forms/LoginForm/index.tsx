@@ -1,6 +1,6 @@
 import Button from '@components/Button'
 import Input from '@components/Fields/Input'
-import { LockClosedIcon, MailIcon, UserIcon } from '@heroicons/react/outline'
+import { LockClosedIcon, UserIcon } from '@heroicons/react/outline'
 import routes from '@routes'
 import { getTranslation } from '@src/languages'
 import { Field, Form, FormikProps } from 'formik'
